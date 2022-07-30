@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #2d2013;
+}
+
+.container {
+    max-width: 60%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d2013;
+}
+
+.container h1 {
+    margin-top: 5rem;
+    color: white;
+}
+
+.container form {
+    margin-top: 1rem;
+
+}
+
+#search-name {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+.sub-btn {
+    color: black;
+    margin-left: 5px;
+    font-size: 16px;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+.search-result {
+    display: flex;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-div {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.result-div-hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;
+
+}
+
+/* div .result-div .result-div-hover:hover {
+   display: block;
+} */
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color: antiquewhite;
+    font-size: 1.2rem;
+}
+
+.food-name {
+    font-size: 2rem;
+}
+
+.food-img {
+    width: 250px;
+    max-height: 250px;
+    margin-top: 1.5rem;
+    border: 2px solid #000;
+}
+
+.country {
+    width: 400px;
+    height: 100px;
+    border: 2px solid #000;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info {
+    font-size: 1.5rem;
+}
+
+.instructions {
+    max-width: 400px;
+    font-size: 1.2rem;
+    line-height: 18px;
+    padding-top: 2rem;
+}
+
+.ingredient {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ingredient-Box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin-bottom: 1.5rem;
+    /* justify-content: space-around; */
+}
+
+.ingredient-Box-p {
+    padding: 2px 5px;
+    background-color: azure;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.owner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2013;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0px;
+    width: 100%;
+}
+
+.owner p {
+    margin: 0.5rem 0;
+    color: #fff;
+    font-weight: bold;
+}
